@@ -1,0 +1,9 @@
+{
+    "if": {
+        "field": "tags[0]",
+        "exists": "false"
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
