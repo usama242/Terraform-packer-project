@@ -1,7 +1,11 @@
 {
     "if": {
-        "field": "tags[0]",
-        "exists": "false"
+        "allof": [
+            {
+                "field": "[concat('tags[', parameters('tagName'), ']')]",
+                "exists": "false"
+            }
+        ]
     },
     "then": {
         "effect": "deny"
