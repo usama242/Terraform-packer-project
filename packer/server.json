@@ -3,7 +3,8 @@
 		"subscription_id": "{{env `AZ_SUSCRIPTION_ID`}}",
 		"client_id": "{{env `AZ_CLIENT_ID`}}",
 		"client_secret": "{{env `AZ_CLIENT_SECRET`}}",
-		"resource_group_name": "{{env `AZ_RESOURCE_GROUP_NAME`}}"
+		"tenant_id": "{{env `AZ_TENANT_ID`}}",
+		"resource_group_name": "{{env `RESOURCE_GROUP_NAME`}}"
 	},
 	"builders": [
 	  {
@@ -12,6 +13,7 @@
 		"subscription_id": "{{user `subscription_id`}}",
 		"client_id": "{{user `client_id`}}",
 		"client_secret": "{{user `client_secret`}}",
+		"tenant_id": "{{user `tenant_id`}}",
   
 		"os_type": "Linux",
 		"image_publisher": "Canonical",
